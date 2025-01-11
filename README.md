@@ -28,6 +28,12 @@ Para intalar el juego
 # Clona el repositorio 
 git https://github.com/ld-ebrat/EB_Survival_Kodland.git
 cd EB_Survival_Kodland
+# Instalar virtualenv
+pip install virtualenv
+# Crear el entorno virtual 
+virtualenv venv
+# Activar el entorno virtual
+.\venv\Scripts\actívate
 #Instala las dependencias 
 pip install -r requirements.txt
 ```

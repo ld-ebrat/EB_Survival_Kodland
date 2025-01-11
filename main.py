@@ -1,12 +1,12 @@
 import pygame
 from world.world import World
 from player.player import Player
-from key_press import movePlayer, inventoryKey
+from key_press import movePlayer, inventoryKey, collindableEnemies
 from enemies.enemies import Skeleton, SlimeGreen, SlimePurple
 from player.inventory import HotBar, Inventory
 pygame.init()
 
-screen = pygame.display.set_mode((720, 680))
+screen = pygame.display.set_mode((680, 680))
 pygame.display.set_caption("Juego")
 
 pygame.font.init()
@@ -15,8 +15,8 @@ def main():
     
     clock = pygame.time.Clock()
     running = True
-    world = World(720,720)
-    player = Player(360,420)
+    world = World(680,680)
+    player = Player(360,400)
     skeleton = Skeleton()
     slimeGreen = SlimeGreen()
     slimePurple = SlimePurple()
@@ -27,6 +27,11 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                if event.button == 1:
+                    for slime in slimeGreen.slimesGreen:
+                        if slime["rect"].collidepoint(event.pos):
+                            collindableEnemies(slime, player)
             inventoryKey(inventory, event)
                 
         key = pygame.key.get_pressed()

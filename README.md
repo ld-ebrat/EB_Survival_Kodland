@@ -26,8 +26,8 @@ Para intalar el juego
 
 ```bash 
 # Clona el repositorio 
-git clone https://github.com/tu-usuario/juego-aventuras.git 
-cd juego-aventuras 
+git https://github.com/ld-ebrat/EB_Survival_Kodland.git
+cd EB_Survival_Kodland
 #Instala las dependencias 
 pip install -r requirements.txt
 ```

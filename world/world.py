@@ -26,13 +26,14 @@ world1 = [
     [2,2,2,0,0,0,2,2,2,2,2,2,1,2,2,2,2,2,3,2],
 ]
 
-cell_size = 36
+cell_size = 34
 class World:
     def __init__(self, width, height):
         self.width = width
         self.height = height
         self.images_loaded = {}
         self.collindables = []
+        self.collindablesEnmies = []
         self.world = world1
         
         for image_type, image in image_path_nature.items():

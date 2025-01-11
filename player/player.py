@@ -25,5 +25,6 @@ class Player:
         self.y += moveY
         self.rect.topleft= (self.x,self.y)
         
-    def Atack(self):
+    def Atack(self, enemy):
+        enemy["health"] -= self.atack
         pass

@@ -19,6 +19,13 @@ def collindablePlayer(dx,dy, collindable, player):
             return
     
     player.move(dx,dy)
+
+def collindableEnemies(collindable, player):
+    
+    if player.rect.colliderect(collindable["rect"]):
+        player.Atack(collindable)
+    else:
+        print("Aun estoy lejos")
     
 
 def inventoryKey(inventory,key):

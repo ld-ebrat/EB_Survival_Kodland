@@ -4,7 +4,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 
 image_path_player = {
     "path": os.path.join(base_dir, "../public/assets/player","player.png"),
-    "size": 35
+    "size": 30
 }
 image_path_hotbar = {
     "path": os.path.join(base_dir, "../public/assets/player","inventory.png"),

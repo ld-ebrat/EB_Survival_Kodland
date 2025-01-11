@@ -16,7 +16,9 @@ El videojuego constra de 3 enemigos, primeramente tenemos un Esqueleto, luego un
 
 ## Funcionalidades
 -**Exploracion**: El jugador podra explorar el mundo, el cual puede hacerlo presionando las teclas de UP, DOWN, LEFT, RIGTH, lo cual hara que el personaje empiece a moverse
+
 -**Combate**: El jugador podra entrar en combate con los diferentes enemigos que cuenta el juego, visualizar como la barra de vida disminuye tanto la propia como la del enemigo
+
 Para hacerlo, debe acercarse a un enemigo y precionar click sobre el enemigo el cual desea atacar
 
 ## Instalacion
